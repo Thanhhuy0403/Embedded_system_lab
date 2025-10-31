@@ -16,7 +16,7 @@ void task_low(void *pvParameters){
     }
 }
 
-void app_main(void){
+void app_main_unuse(void){
     xTaskCreate(task_high, "task_high", 2048, NULL, 2, NULL);
     xTaskCreate(task_low, "task_low", 2048, NULL, 1, NULL);
 }
