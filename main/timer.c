@@ -29,7 +29,7 @@ void vTimerCallback(TimerHandle_t xTimer) {
     }
 }
 
-void app_main(void){
+void app_main_unuse(void){
     xTimer1 = xTimerCreate(
         "Timer1",
         pdMS_TO_TICKS(2000),
