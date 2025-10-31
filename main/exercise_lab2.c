@@ -45,7 +45,7 @@ void button_task(void *pvParameters) {
 }
 
 
-void app_main(void) {
+void app_main_unuse(void) {
     printf("=== ESP-IDF FreeRTOS Demo ===\n");
 
     xTaskCreate(
