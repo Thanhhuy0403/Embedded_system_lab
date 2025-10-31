@@ -20,7 +20,7 @@ void printTask(void *pvParameters) {
 }
 
 
-void app_main(void) {
+void app_main_unuse(void) {
     // Tạo task nhấp nháy LED
     xTaskCreate(
         printTask,      // Hàm thực thi task
