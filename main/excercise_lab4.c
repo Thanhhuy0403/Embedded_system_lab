@@ -70,7 +70,7 @@ void error_task(void *pv){
     }
 }
 
-void app_main(void){
+void app_main_unuse(void){
     requestQueue = xQueueCreate(5, sizeof(Request));
     xTaskCreate(reception_task, "reception_task", 4096, NULL, 3, NULL);
     xTaskCreate(task_A, "task_A", 4096, NULL, 2, NULL);
