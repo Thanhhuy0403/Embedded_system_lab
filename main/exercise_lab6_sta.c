@@ -189,8 +189,9 @@ void wifi_connect_sta(const char *ssid, const char *password)
     ESP_LOGI(TAG, "WiFi connection initiated");
 }
 
-void app_main_unuse(void)
+void app_main(void)
 {
+    ESP_LOGI(TAG, "=== ESP32 WiFi Lab 6 - STA MODE ===");
     ESP_LOGI(TAG, "Step 1: Initializing WiFi subsystem...");
     ESP_ERROR_CHECK(nvs_flash_init());
     ESP_ERROR_CHECK(esp_netif_init());
